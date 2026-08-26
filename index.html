@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tueste Norte — Café de especialidad</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="cabecera">
+    <h1>Tueste Norte</h1>
+    <p>Café de especialidad tostado en pequeños lotes</p>
+
+    <nav>
+        <a href="#cafes">Cafés</a>
+        <a href="#catas">Catas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+<main>
+    <section id="cafes">
+    <h2>Nuestros cafés de origen</h2>
+
+    <article class="cafe">
+        <h3>Etiopía</h3>
+        <p>Notas florales y cítricas. Tueste claro.</p>
+        <p class="precio">12,50 € / 250 g</p>
+    </article>
+
+    <article class="cafe">
+        <h3>Colombia</h3>
+        <p>Caramelo y frutos rojos. Tueste medio.</p>
+        <p class="precio">11,00 € / 250 g</p>
+    </article>
+    </section>
+
+    <section id="catas">
+    <h2>Catas mensuales</h2>
+    <p>Cada mes catamos un origen distinto en nuestra tienda.</p>
+
+    <button id="btn-catas" type="button">Quiero saber más</button>
+
+    <p id="info-catas" hidden>
+        Apúntate desde el formulario de contacto y te avisamos de la próxima cata.
+    </p>
+</section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes escribirnos para solicitar información.</p>
+        
+        <form action="contacto.php" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
+    </section>
+</main>
+<footer>
+    <p>Tueste Norte — tostadero de café de especialidad</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

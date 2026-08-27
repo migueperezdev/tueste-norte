@@ -102,3 +102,14 @@ footer {
     padding: 1.5rem;
     color: #6b5744;
 }
+
+.disponibilidad {
+    display: inline-block;
+    margin: 8px 0 0;
+    padding: 4px 10px;
+    background-color: #e7f3e7;
+    color: #27632a;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}

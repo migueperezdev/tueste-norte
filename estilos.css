@@ -24,6 +24,7 @@ body {
 .cabecera nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 1rem;
 }
@@ -43,11 +44,37 @@ section {
     margin-bottom: 3rem;
 }
 
+section h2 {
+    margin-bottom: 1rem;
+}
+
+.cafe h3 {
+    margin-bottom: 0.5rem;
+}
+
+.cafe p+p {
+    margin-top: 0.35rem;
+}
+
 /* Catálogo de cafés */
 #cafes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
+}
+
+#suscripcion a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    background-color: #2b1d12;
+    color: #faf6f1;
+    text-decoration: none;
+}
+
+#suscripcion a:hover {
+    background-color: #4a3421;
 }
 
 #cafes h2 {
@@ -112,4 +139,19 @@ footer {
     border-radius: 999px;
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .cabecera {
+        padding: 2rem 1rem;
+    }
+
+    .cabecera nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
 }

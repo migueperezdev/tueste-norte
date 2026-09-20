@@ -1,82 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tueste Norte — Café de especialidad</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <header class="cabecera">
-    <h1>Tueste Norte</h1>
-    <p>Café de especialidad tostado en pequeños lotes</p>
+        <h1>Tueste Norte</h1>
+        <p>Café de especialidad tostado en pequeños lotes</p>
 
-    <nav>
-        <a href="#cafes">Cafés</a>
-        <a href="#catas">Catas</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
-<main>
-    <section id="cafes">
-    <h2>Nuestros cafés de origen</h2>
+        <nav>
+            <a href="#nosotros">Quiénes somos</a>
+            <a href="#cafes">Cafés</a>
+            <a href="#catas">Catas</a>
+            <a href="#suscripcion">Suscripción</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section id="nosotros">
+            <h2>Quiénes somos</h2>
+            <p>
+                Somos un pequeño tostadero de café de especialidad. Seleccionamos
+                cafés de diferentes orígenes y los tostamos en pequeños lotes para
+                conservar todo su aroma y sabor.
+            </p>
+        </section>
+        <section id="cafes">
+            <h2>Nuestros cafés de origen</h2>
 
-    <article class="cafe">
-        <h3>Etiopía</h3>
-        <p>Notas florales y cítricas. Tueste claro.</p>
-        <p class="precio">12,50 € / 250 g</p>
-        <p class="disponibilidad">Disponible</p>
-    </article>
+            <article class="cafe">
+                <h3>Sidamo Floral</h3>
+                <p><strong>Origen:</strong> Sidamo, Etiopía</p>
+                <p><strong>Notas de cata:</strong> flores, bergamota y limón</p>
+                <p><strong>Tueste:</strong> claro</p>
+                <p class="precio">12,50 € / 250 g</p>
+                <p class="disponibilidad">Disponible</p>
+            </article>
 
-    <article class="cafe">
-        <h3>Colombia</h3>
-        <p>Caramelo y frutos rojos. Tueste medio.</p>
-        <p class="precio">11,00 € / 250 g</p>
-        <p class="disponibilidad">Disponible</p>
-    </article>
+            <article class="cafe">
+                <h3>Sierra Dulce</h3>
+                <p><strong>Origen:</strong> Antioquia, Colombia</p>
+                <p><strong>Notas de cata:</strong> caramelo y frutos rojos</p>
+                <p><strong>Tueste:</strong> medio</p>
+                <p class="precio">11,00 € / 250 g</p>
+                <p class="disponibilidad">Disponible</p>
+            </article>
 
-     <article class="cafe">
-        <h3>Brasil</h3>
-        <p>Chocolate y avellana. Tueste medio.</p>
-        <p class="precio">10,50 € / 250 g</p>
-        <p class="disponibilidad">Disponible</p>
-    </article>
+            <article class="cafe">
+                <h3>Cerrado Natural</h3>
+                <p><strong>Origen:</strong> Minas Gerais, Brasil</p>
+                <p><strong>Notas de cata:</strong> chocolate y avellana</p>
+                <p><strong>Tueste:</strong> medio</p>
+                <p class="precio">10,50 € / 250 g</p>
+                <p class="disponibilidad">Disponible</p>
+            </article>
 
-    </section>
+            <article class="cafe">
+                <h3>Volcán de Antigua</h3>
+                <p><strong>Origen:</strong> Antigua, Guatemala</p>
+                <p><strong>Notas de cata:</strong> cacao, almendra y naranja</p>
+                <p><strong>Tueste:</strong> medio</p>
+                <p class="precio">12,00 € / 250 g</p>
+                <p class="disponibilidad">Disponible</p>
+            </article>
+        </section>
 
-    <section id="catas">
-    <h2>Catas mensuales</h2>
-    <p>Cada mes catamos un origen distinto en nuestra tienda.</p>
+        <section id="catas">
+            <h2>Catas mensuales</h2>
+            <p>Cada mes catamos un origen distinto en nuestra tienda.</p>
 
-    <button id="btn-catas" type="button">Quiero saber más</button>
+            <button id="btn-catas" type="button">Quiero saber más</button>
 
-    <p id="info-catas" hidden>
-        Apúntate desde el formulario de contacto y te avisamos de la próxima cata.
-    </p>
-</section>
+            <p id="info-catas" hidden>
+                Apúntate desde el formulario de contacto y te avisamos de la próxima cata.
+            </p>
+        </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes escribirnos para solicitar información.</p>
-        
-        <form action="contacto.php" method="post">
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre" required>
+        <section id="suscripcion">
+            <h2>Suscripción mensual</h2>
+            <p>
+                Estamos preparando una suscripción para que puedas recibir cada mes
+                una selección de nuestros cafés de especialidad en casa.
+            </p>
+            <p>
+                Si te interesa, puedes comunicárnoslo mediante nuestro formulario.
+            </p>
+            <a href="#contacto">Me interesa la suscripción</a>
+        </section>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes escribirnos para solicitar información.</p>
 
-    <label for="mensaje">Mensaje</label>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <form action="contacto.php" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-    <button type="submit">Enviar</button>
-</form>
-    </section>
-</main>
-<footer>
-    <p>Tueste Norte — tostadero de café de especialidad</p>
-</footer>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
-<script src="app.js"></script>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Tueste Norte — tostadero de café de especialidad</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
+
 </html>

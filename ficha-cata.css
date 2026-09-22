@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f4ead7;
+    font-family: Arial, sans-serif;
+}
+
 .cabecera {
     text-transform: uppercase;
     font-family: "Comic Sans MS", cursive;
@@ -18,7 +23,7 @@
     background-color: #ffcd00;
     font-size: 4rem;
 }
-    
+
 .azul {
     color: #ffffff;
     background-color: #003087;
@@ -29,6 +34,23 @@
     color: #ffffff;
     background-color: #c8102e;
     font-size: 1.3rem;
+}
+
+main {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.ficha {
+    background-color: #87ceeb;
+    padding: 25px 20px;
+    border-radius: 12px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .cafe {
@@ -59,30 +81,8 @@
     padding-left: 20px;
 }
 
-main {
-    max-width: 550px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.titulo-seccion {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .pie-pagina {
     text-align: center;
     margin-top: 40px;
     padding: 20px;
-}
-
-.ficha {
-    background-color: #87ceeb;
-    padding: 25px 20px;
-    border-radius: 12px;
-}
-
-body {
-    background-color: #f4ead7;
-    font-family: Arial, sans-serif;
 }
